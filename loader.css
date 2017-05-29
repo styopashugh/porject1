@@ -1,0 +1,65 @@
+body{
+	background-color: #d2d2d2;
+	text-align: center;
+}
+h1{
+	color: blue;
+	margin: 100px 0;
+	text-shadow: 1px 1px 4px blue;
+}
+
+
+.round,.round::before,.round::after{
+	border-radius: 50%;
+	border: 1px solid transparent;
+}
+
+
+
+
+
+
+
+.round::before,.round::after{
+	position: absolute;
+	content: '';
+}
+
+.round{
+	width: 150px;
+	height: 150px;
+	margin: 100px auto;
+	position: relative;
+	border-top-color:red;
+	animation: 2s one infinite linear;
+}
+
+
+.round::before{
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	border-top-color: blue;
+	animation: 3s one infinite linear;
+
+}
+
+
+.round::after{
+	top: 21px;
+	right: 21px;
+	bottom: 21px;
+	left: 21px;
+	border-top-color: yellow;
+	animation: 10s one infinite linear;
+}
+
+@keyframes one{
+	from{
+			transform: rotate(0deg);
+	}to{
+		transform: rotate(360deg);
+	}
+	
+}
