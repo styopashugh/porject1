@@ -13,6 +13,10 @@ h1{
 	border-radius: 50%;
 	border: 1px solid transparent;
 }
+.round,.round::before,.round::after{
+	border-radius: 50%;
+	border: 1px solid transparent;
+}
 
 
 
